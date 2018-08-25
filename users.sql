@@ -44,7 +44,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `fname`, `lname`, `email`, `password`, `number`, `address1`, `address2`, `postal`, `date`) VALUES
-(1, 'Gurpreet', 'Singh', 'admin@gmail.com', 'c27fe2d55a59e7830c5dd396692d2d3aab663e2ff164b3d6c45922b20c56ce46eb3fa5e54f5ea24b81a1b950de1731de508d83417476f7a18089b8694cb50696', '9874563210', '1234', '1234', '1234', '2018-08-24 16:11:03');
+(1, 'Amit', 'kumar', 'admin@gmail.com', 'c27fe2d55a59e7830c5dd396692d2d3aab663e2ff164b3d6c45922b20c56ce46eb3fa5e54f5ea24b81a1b950de1731de508d83417476f7a18089b8694cb50696', '9874563210', '1234', '1234', '1234', '2018-08-24 16:11:03');
 
 --
 -- Indexes for dumped tables
