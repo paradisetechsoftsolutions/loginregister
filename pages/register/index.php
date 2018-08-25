@@ -11,16 +11,16 @@
     $fields = array('fname', 'lname', 'number' ,'email', 'address1', 'address2', 'postal', 'password');
 
     /* Check for any errors */
-    if (!preg_match("/^[a-z]$/i", $_POST['fname'])) {
+    /*if (!preg_match("/^[a-z]$/i", $_POST['fname'])) {
       $_SESSION['error'][] = 'Only Alphabet characters.!';
-    }
+    }*/
     if(strlen($_POST['fname']) < 3 || strlen($_POST['fname']) > 50) {
       $_SESSION['error'][] = 'Name must be between 3 and 50 characters !';
     }
 
-    if (!preg_match("/^[a-z]$/i", $_POST['lname'])) {
+    /*if (!preg_match("/^[a-z]$/i", $_POST['lname'])) {
       $_SESSION['error'][] = 'Only Alphabet characters.!';
-    }
+    }*/
     if(strlen($_POST['lname']) < 3 || strlen($_POST['lname']) > 50) {
       $_SESSION['error'][] = 'Name must be between 3 and 50 characters !';
     }
@@ -56,16 +56,16 @@
       $_SESSION['error'][] = 'Postal code must be 4 digits !';
     }
 
-    if (!preg_match("/^[a-z]$/i", $_POST['address1'])) {
+    /*if (!preg_match("/^[a-z]$/i", $_POST['address1'])) {
       $_SESSION['error'][] = 'Only Alphabet characters.!';
-    }
+    }*/
     if(strlen(trim($_POST['address1'])) > 50) {
       $_SESSION['error'][] = 'Postal code must be 4 digits !';
     }
 
-    if (!preg_match("/^[a-z]$/i", $_POST['address2'])) {
+    /*if (!preg_match("/^[a-z]$/i", $_POST['address2'])) {
       $_SESSION['error'][] = 'Only Alphabet characters.!';
-    }
+    }*/
     if(strlen(trim($_POST['address2'])) > 50) {
       $_SESSION['error'][] = 'Postal code must be 4 digits !';
     }
