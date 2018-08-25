@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	
+	#login page
+	RewriteRule ^$ index.php?folder=login&page=index
+	RewriteRule ^index$ index.php?folder=login&page=index
+	RewriteRule ^login$ index.php?folder=login&page=index
+	
+	#register page
+	RewriteRule ^register$ index.php?folder=register&page=index
+
+	#profile page
+	RewriteRule ^profile$ index.php?folder=profile&page=index
+
+	#logout
+	RewriteRule ^logout$ index.php?folder=login&page=logout
+
+	
+
+</IfModule>
